@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-roboto;
+  }
+}
+@layer components {
+  .size-selector input:checked + label {
+    @apply bg-primary text-white;
+  }
+  .color-selector input:checked + label {
+    @apply ring-2 ring-offset-1 ring-primary;
+  }
+}
+
+/* input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+
+  /* @apply w-6 h-6 appearance-none pointer-events-auto; */
+
+.price-input {
+  @apply flex w-full mt-4;
+}
+
+/* .range-input {
+  position: relative;
+  display: flex;
+}
+.range-input input {
+  position: absolute;
+  top: -14px;
+  height: 15px;
+  width: 100%;
+  background: none;
+  -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  widht: 17px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  background: #fd3d57;
+ pointer-events: auto;
+  
+  
+} */
